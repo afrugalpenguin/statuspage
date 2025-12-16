@@ -1,0 +1,32 @@
+{
+  "name": "statuspage",
+  "version": "1.0.0",
+  "description": "Ultra-lightweight status page widget",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run build:html",
+    "build:html": "node scripts/build-html.js",
+    "preview": "vite preview",
+    "start": "node --import tsx server/index.ts",
+    "server": "tsx server/index.ts",
+    "server:dev": "tsx watch server/index.ts"
+  },
+  "dependencies": {
+    "preact": "^10.19.3",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "tsx": "^4.7.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.8.2",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.6",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

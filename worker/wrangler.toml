@@ -1,0 +1,14 @@
+# Cloudflare Worker Configuration
+# Deploy: npx wrangler deploy
+
+name = "status-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Optional: Set your account_id here or use wrangler login
+# account_id = "your-account-id"
+
+# Optional: Custom domain
+# routes = [
+#   { pattern = "status-api.yourdomain.com/*", zone_name = "yourdomain.com" }
+# ]
