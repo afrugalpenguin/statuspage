@@ -27,5 +27,8 @@ Thumbs.db
 # TypeScript
 *.tsbuildinfo
 
+# Azure CLI local config
+.azure/
+
 # Claude
 .claude/
